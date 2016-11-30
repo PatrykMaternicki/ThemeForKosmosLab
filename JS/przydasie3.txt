@@ -1,0 +1,48 @@
+var animation = false;
+var animationString = "anim_frame";
+var domPrefix = 'Webkit Moz O ms Khtml'.split(' ');
+var keyframePrefix = '';
+var pfx = '';
+
+		if( elm.style.animationName ) 
+		{ 
+		animation = true;
+		}
+
+		if( animation === false ) 
+		{
+			for( var i = 0; i < domPrefix.length; i++ ) 
+			{
+				if( this.style[ domPrefix[i] + 'AnimationName' ] !== undefined ) 
+				{
+				pfx = domPrefix[ i ];
+				animationstring = pfx + 'Animation';
+				keyframePrefix = '-' + pfx.toLowerCase() + '-';
+				animation = true;
+				break;
+				}
+			}
+		else
+		{
+			if (startPosition == this.num)
+				{
+				return;
+				}
+			else if (startPosition > this.num)
+				{
+				var iterationAnimation = startPosition - this.num;
+				var 
+				}
+			else if (startPosition < this.num)
+				{
+				}
+				
+		this.style.[animationString] = 'moveFrame 500ms linear 1';
+		var keyframes = '@' + keyframePrefix + 'keyframes moveFrame {' +
+						'0% {' + keyframePrefix + 'translate:transformX(0); }'
+						'100 %{' + keyframePrefix + 'translate:transfomX(' + distance + ')'+
+						'}';
+						
+						
+						
+		}

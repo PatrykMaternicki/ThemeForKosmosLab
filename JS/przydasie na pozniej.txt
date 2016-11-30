@@ -1,0 +1,85 @@
+window.onload = function  ()
+{
+
+var id = setInterval ( changeColor, 10000);
+
+}
+function changeColor ()
+{
+	switch (i)
+	{
+	case 0: {
+			arr[0].classList.add ("anim_sqrt");
+			arr[0].classList.add ("bg");
+			i++;
+			return i;
+			}
+	case 1: {
+			
+			arr[1].classList.add ("anim_sqrt");
+			arr[1].classList.add ("bg");
+			arr[0].classList.remove ("bg");
+			arr[0].classList.remove ("anim_sqrt");
+			i++;
+			return i;
+			}
+	case 2: {
+			
+			arr[2].classList.add ("anim_sqrt");
+			arr[2].classList.add ("bg");
+			arr[1].classList.remove ("bg");
+			arr[1].classList.remove ("anim_sqrt");
+			i++;
+			return i;
+			}
+	case 3: {
+			
+			arr[3].classList.add ("anim_sqrt");
+			arr[3].classList.add ("bg");
+			arr[2].classList.remove ("bg");
+			arr[2].classList.remove ("anim_sqrt");
+			i++;
+			return i;
+			}	
+	case 4: {
+			
+			arr[4].classList.add ("anim_sqrt");
+			arr[4].classList.add ("bg");
+			arr[3].classList.remove ("bg");
+			arr[3].classList.remove ("anim_sqrt");
+			i++;
+			return i;
+			}
+
+			
+}
+	if (i > 4)
+		{
+		i = 0;
+		arr[4].classList.remove("bg");
+		arr[4].classList.remove("anim_sqrt");
+		return i;
+		}
+}
+function changePosition (i)
+	{
+	if (i == 1)
+		{
+		content1.classList.remove ("pos_right");
+		content1.classList.add ("pos_left");
+		}
+	content1.classList.remove ("pos_left");
+	content1.classList.add ("pos_right");
+	}
+function removePosition (i)
+	{
+	if (i == 1)
+		{
+		content0.classList.remove ("pos_left");
+		content0.classList.add ("pos_right");
+		}
+	content0.classList.remove ("pos_right");
+	content0.classList.add ("pos_left");
+	}
+	
+		
