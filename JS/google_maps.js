@@ -1,8 +1,9 @@
 var map;
+
 function initMap() {
 		var localization = new google.maps.LatLng(53.777,20.487);
-				
-			// Styl mapy	
+
+			// Styl mapy
 			var map_style =	[
     {
         "featureType": "all",
@@ -182,22 +183,22 @@ function initMap() {
         ]
     }
 ]
-				
-				
-				
-				
-				
+
+
+
+
+
 				var option_map = {
 					zoom: 15,
 					center: localization,
 					mapTypeControl: false,
 					navigationControl:false
 				};
-				map = new google.maps.Map(document.getElementById("map"), option_map); 
+				map = new google.maps.Map(document.getElementById("map"), option_map);
 				map.setOptions({styles: map_style});
-				
-					
-				
+
+
+
 				//Właścuwiści markera
 				var icon_size = new google.maps.Size(200,200);
 				var new_point_start = new google.maps.Point(0,0);
@@ -205,7 +206,7 @@ function initMap() {
 				var marker_image = "img/marker.png";
 				// Stworzenie nowego markera
 				var marker = new google.maps.MarkerImage(marker_image,icon_size,new_point_start, new_point_catch);
-				
+
 				// stworzenie markera właściwości
 				var point  = new google.maps.LatLng(53.775,20.486);
 				var option_marker =
@@ -215,10 +216,10 @@ function initMap() {
 					title: "Inperium Software House",
 					icon: marker
 				}
-				
+
 				//Inicjacja API
 				var gmp_marker = new google.maps.Marker(option_marker);
-				
+
 }
 
 
@@ -228,11 +229,11 @@ function initMap() {
 	center: local,
     zoom: 13,
 	};
-	
+
 	map = new google.maps.Map(document.getElementById('map'),option_map);
-  
+
   var point_map = new google.maps.LatLng(53.770,20.480);
- 
+
   var gmp_marker_option  =
 	{
 	position: lat: ident_map;
@@ -242,4 +243,3 @@ function initMap() {
 
 }
 */
-

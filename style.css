@@ -674,8 +674,16 @@ article
   margin-left:25px;
   text-align:justify;
   width:67.7%;
-
   font-size:10pt;
+}
+article.article_devblog {
+  width:100%;
+}
+article.devblog_post{
+  float:right;
+  margin-top:25px;
+  width: 60%;
+  margin-right:25px;
 }
 
 .float
@@ -810,21 +818,38 @@ line-height:50px;
 vertical-align:middle;
 }
 
+form{
+  margin-top:65px;
+  margin-left:25px;
+  float:left;
+}
+#rc-imageselect, .g-recaptcha{
+  margin-top:10px;
+}
+textarea{
+  width:200px;
+  height:100px;
+}
+button{
+  float: right;
+}
 #map
 
 {
-
-  position: absolute;
-  height:600px;
-  top: 0;
-  bottom: -200px;
-  left: 0;
-  right: 0;
-  z-index: 0;
-  width:1200px;
-  margin-left:auto;
-  opacity:0.6;
+  float:right;
+  height:400px;
+  width:60%;
+  float:right;
+  margin-right:25px;
+  margin-top:25px;
 }
+td{
+  text-align:right;
+}
+tr{
+  margin-bottom:10px;
+}
+
 
 .social_media
 {
@@ -994,6 +1019,13 @@ background: linear-gradient(45deg, rgba(218,218,218,1) 0%, rgba(218,218,218,1) 1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadada', endColorstr='#dadada', GradientType=1 )
 }
 
+.devblog_middle{
+  padding-bottom:50px;
+}
+
+.form{
+  resize:both;
+}
 #container_sub
 {
 width:100%;
@@ -1010,7 +1042,11 @@ font-size:36pt;
 color:#25282c;
 
 }
-
+.devblog_title_post{
+  margin-left:25px;
+  float:left;
+  width:30%;
+}
 
 #wrap_content
 {
@@ -1018,23 +1054,37 @@ float:left;
 margin-bottom:100px;
 width:100%;
 }
-.gallery{
-  margin-top:25px;
+
+#wrap_content_devblog
+{
+float:left;
+margin-bottom:100px;
+width:60%;
 }
 
-.gallery .gallery-item {
+.gallery{
+  margin-top:25px;
+  margin-left:auto;
+  margin-right:auto;
+  width:90%;
+}
+
+ .gallery-item {
 	float: left;
 	margin-top: 0;
 	text-align: center;
-	width: 23%;
+	width: 33%;
 }
 
 
 .wp-post-image
 		{
-        border:1px black solid;
+    margin-top:20px;
+    margin-left:20px;
+    border:1px black solid;
 		width:35%;
-		height:20%;
+		height:auto;
+    float:left;
 		}
 .content_after
 {
@@ -1109,6 +1159,9 @@ code:last-child
 {
 margin-right:10px;
 }
+.wp-post-image.attachment-large{
+margin-top: 160px;
+}
 
 
 @media all and (max-width:1600px)
@@ -1150,12 +1203,15 @@ margin-right:10px;
 		height:20%;
 		}
 
+
     .gallery .gallery-item {
     	float: left;
     	margin-top: 0;
     	text-align: center;
     	width: 32%;
     }
+
+
 
 
 
@@ -1173,6 +1229,7 @@ margin-right:10px;
     margin-top:97px;
   }
 
+
 	ol
 	{
 	height:2em;
@@ -1182,6 +1239,7 @@ margin-right:10px;
 	height:64px;
 
 	}
+
 	li
 	{
 	display:inherit;
@@ -1190,7 +1248,15 @@ margin-right:10px;
 	background-color:#25282c;
 	display:none;
 	transform:translateX(-125px);
+  z-index:50;
 	}
+  li.back_menu{
+    	transform:translate(-125px,10px);
+      border-top:inherit;
+  }
+  ol:hover{
+    background-image:none;
+  }
 	ol:hover > li
 	{
 	display:block;
@@ -1202,6 +1268,7 @@ margin-right:10px;
     margin-left: 0px;
     margin-right: 0px;
   }
+
 
 
 	}
@@ -1238,7 +1305,13 @@ margin-right:10px;
 	}
 }
 @media all and (max-width:1000px)
-	{
+
+{
+
+  #map{
+    width:50%;
+
+  }
 	#container
 		{
 		max-width:100%;
@@ -1257,18 +1330,40 @@ margin-right:10px;
 	padding-right:5%;
 	font-size:8pt;
 	}
+
 }
 
 @media all and (max-width:800px)
 {
+  #map{
+    width:100%;
+    margin-left:0;
+    margin-right:0;
+    margin-top:25px;
+  }
+
+
+
 	.about
 	{
 	height:inherit;
 	}
+  article.devblog_post{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:150px;
+    float:inherit;
+  }
+  .devblog_title_post{
+    width:50%;
+  }
+
 }
 
 @media all and (max-width:670px)
 {
+
 	.square
 	{
 	margin-right:0px;
@@ -1290,10 +1385,13 @@ margin-right:10px;
 	{
 	font-size:17pt;
 	}
-	.wp-post-image
-	{
-	visibility:hidden;
-	}
+  #wrap_content_devblog{
+    width:80%;
+  }
+  .wp-post-image.attachment-large{
+  width:60%;
+  margin-top:25px;
+  }
 	.red_square
 	{
 	visibility:visible;
@@ -1314,8 +1412,47 @@ margin-right:10px;
 }
 @media all and (max-width:550px)
 {
+
+
 .red_square
 	{
 	visibility:hidden;
 	}
 }
+@media all and (max-width:450px)
+{
+
+    #rc-imageselect, .g-recaptcha {transform:scale(0.77) translate(35px,0px);-webkit-transform:scale(0.77) translate(35px,0px);transform-origin:0 0;-webkit-transform-origin:0 0;}
+
+
+  textarea{
+    width:155px;
+    height:100px;
+  }
+  button{
+    transform:translateX(-42px);
+  }
+}
+
+@media all and (max-width:400px)
+{
+
+    #rc-imageselect, .g-recaptcha {transform:scale(0.70) translate(35px,0px);-webkit-transform:scale(0.70) translate(-25px,0px);transform-origin:0 0;-webkit-transform-origin:0 0;}
+
+
+  textarea{
+    width:205px;
+    height:100px;
+    transform:translateX(-95px);
+  }
+  button{
+    transform:translateX(-111px);
+  }
+  td{
+      transform:translateX(-20px);
+  }
+  input{
+    transform: translateX(-50px);
+    width: 150px;
+  }
+  }
