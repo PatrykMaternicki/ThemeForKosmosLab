@@ -199,26 +199,8 @@ function initMap() {
 
 
 
-				//Właścuwiści markera
-				var icon_size = new google.maps.Size(200,200);
-				var new_point_start = new google.maps.Point(0,0);
-				var new_point_catch = new google.maps.Point(16,16);
-				var marker_image = "img/marker.png";
-				// Stworzenie nowego markera
-				var marker = new google.maps.MarkerImage(marker_image,icon_size,new_point_start, new_point_catch);
-
-				// stworzenie markera właściwości
-				var point  = new google.maps.LatLng(53.775,20.486);
-				var option_marker =
-				{
-					position: point,
-					map: map,
-					title: "Inperium Software House",
-					icon: marker
-				}
 
 				//Inicjacja API
-				var gmp_marker = new google.maps.Marker(option_marker);
 
 }
 

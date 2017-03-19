@@ -7,7 +7,10 @@
 	<meta name="keywords" content="coś tam">
 	<meta name="description" content="coś tam">
 	<meta charset="<?php bloginfo( 'charset'); ?>"/>
-
+	<?php
+	addCookie();
+	echo "get_template_directory_uri()";
+	 ?>
 
 	<?php
 	function getScript_and_CSS ()
@@ -19,13 +22,29 @@
 					get_template_directory_uri().'/style.css'
 					);
 
-					wp_enqueue_style (
-					'webFont',
-					'https://fonts.googleapis.com/css?family=Montserrat:700'
+					wp_register_script(
+					'google-map',
+					'https://maps.googleapis.com/maps/api/js?key=AIzaSyCaqnLM1SVrvL3kQshw_XDulLz383P6vig&callback=initMap',
+					false,
+					true
+				);
+
+					wp_register_script(
+						'google-map-api',
+						get_template_directory_uri().'/JS/google_maps.js',
+						false,
+			      true
 					);
+					wp_enqueue_script('google-map', true);
+					wp_enqueue_script('google-map-api',true);
+					wp_register_script('form-api', get_template_directory_uri().'/JS/formApi.js',true);
+					wp_enqueue_script('form-api');
+
 				}
 
 	add_action('wp_enqueue_scripts', 'getScript_and_CSS');
+
+
 	?>
 	       <!-- [if IE]>
     <style>
@@ -54,13 +73,13 @@
 </head>
 <body id="bg_body">
 
-<header id="header_sub">
+<header>
 
 <?php getLogo(); ?>
 
 				<nav class="navbar_sub">
-				<ol>
-							<?php infoURL(); ?>
+				<ol class="hamburger_menu">
+							<?php buildNav(); ?>
 
 				</ol>
 				</nav>

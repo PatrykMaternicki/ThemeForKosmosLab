@@ -17,11 +17,10 @@
                ?>
               <?php
 
-              $content = get_the_content();
+              $content = strip_shortcodes(get_the_content());
               $link = get_permalink();
-              $trimmed_content = wp_trim_words( $content, 100, '<a href='.$link.'/>More...</a>' );
+              echo wp_trim_words( $content, 100, '<a href='.$link.'/>More...</a>' );
 
-              echo $trimmed_content;
             echo "</article>";
             ?>
   </section>

@@ -18,12 +18,8 @@
 					'stylesheet',
 					get_template_directory_uri().'/style.css'
 					);
+}
 
-					wp_enqueue_style (
-					'webFont',
-					'https://fonts.googleapis.com/css?family=Montserrat:700'
-					);
-				}
 
 	add_action('wp_enqueue_scripts', 'getScript_and_CSS');
 	?>
@@ -52,15 +48,15 @@
 	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
     <?php wp_head(); ?>
 </head>
-<body id="bg_body">
+<body>
 
-<header id="header_sub">
+<header>
 
 <?php getLogo(); ?>
 
 				<nav class="navbar_sub">
 				<ol>
-				<?php getBackNav(); ?>
+				<?php buildBackNav(); ?>
 
 				</ol>
 				</nav>
