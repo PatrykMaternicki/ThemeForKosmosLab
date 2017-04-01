@@ -18,6 +18,21 @@
 					'stylesheet',
 					get_template_directory_uri().'/style.css'
 					);
+					wp_register_script(
+					'google-map',
+					'https://maps.googleapis.com/maps/api/js?key=AIzaSyCaqnLM1SVrvL3kQshw_XDulLz383P6vig&callback=initMap',
+					false,
+					true
+				);
+
+					wp_register_script(
+						'google-map-api',
+						get_template_directory_uri().'/JS/google_maps.js',
+						false,
+			      true
+					);
+					wp_enqueue_script('google-map', true);
+					wp_enqueue_script('google-map-api',true);
 
 				}
 

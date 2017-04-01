@@ -144,6 +144,16 @@ function add_async_attribute($tag, $handle) {
 
 add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
 add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
+function createSquare(){
+  $imagesURL = [
+    get_template_directory_uri()."./img/casm.png",
+    get_template_directory_uri()."./img/create-things.png",
+    get_template_directory_uri()."./img/project.png"
+  ];
+  foreach ($imagesURL as $imgURL){
+    echo "<li class='flex'><img class='' src=$imgURL></img></li>";
+  }
+}
 
 function initSliderAPI(){
   if (in_category("devblog") || in_category("projects") && is_single()){
