@@ -14,7 +14,7 @@
 			 <?php
  		 	if (have_posts()) : while (have_posts()) : the_post();
 			if (in_category('about')){
-			echo "<h1>";
+			echo "<h1 class='main-title--mobile'>";
 			the_title();
 			echo"</h1>";
        the_content();

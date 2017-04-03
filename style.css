@@ -173,7 +173,7 @@ background-position:center;
 cursor:pointer;
 color:black;
 }
-.nav_size::first-letter:hover{
+.nav_size:first-letter:hover{
   color:red;
 }
 .nav_size:nth-last-child(1){
@@ -352,6 +352,9 @@ button{
   border:none;
   cursor:pointer;
 }
+.contact-title-mobile{
+  display:none;
+}
 
 
 .form{
@@ -483,7 +486,9 @@ header
 }
 @media all and (max-width:1300px)
 	{
-
+    #map{
+      width:50%;
+    }
 
     .nav_size:nth-last-child(1){
       margin-left:0px;
@@ -533,6 +538,25 @@ header
       margin-left: 0px;
       margin-right: 0px;
     }
+
+    .nav_size{
+      background:none;
+      color:white;
+    }
+    .active_site:first-letter{
+      color:white;
+    }
+
+    .nav_size:hover{
+      color:white;
+      background-image:inherit;
+      background-color:#ED1B24;
+    }
+    .active_site::first-letter{
+      color:white !important;
+    }
+
+  }
 	#container
 	{
 	max-width:80%;
@@ -592,15 +616,18 @@ header
 	width:94%;
 	}
 }
+
+
+@media all and (max-width:1100px){
+  img.img-company{
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
 @media all and (max-width:1000px)
 
 {
 
-
-  #map{
-    width:50%;
-
-  }
 	#container
 		{
 		max-width:100%;
@@ -619,18 +646,40 @@ header
 	padding-right:5%;
 	font-size:8pt;
 	}
+  .images-contener{
+    padding-bottom:625px !important;
+  }
+  .footer-contener{
+  margin-top:25px;
+  height:600px !important;
+  }
+  #map{
+    width:100%;
+    margin-left:0;
+    margin-right:0;
+  }
+  .contact-title{
+    visibility: hidden;
+  }
+  .contact-title-mobile{
+    display:block;
+    transform: translateX(-50px);
+  }
+  .address-wraper{
+    transform: translateY(-25px);
+  }
 
 }
 
 @media all and (max-width:800px)
 {
-  #map{
-    width:100%;
-    margin-left:0;
-    margin-right:0;
-    margin-top:25px;
-  }
 
+  img.img-company{
+    display:none;
+  }
+  article.main-article{
+    width:100% !important;
+  }
 
 
 	.about
@@ -646,11 +695,30 @@ header
   .devblog_title_post{
     width:50%;
   }
+  .images-wraper-image{
+    width:160px;
+  }
+
 
 }
 
 @media all and (max-width:620px)
 {
+  .images-contener-wrapper{
+    display:inherit !important;
+  }
+  div.images-contener-row{
+    text-align:left !important;
+    height:220px;
+  }
+  .images-contener-row-title{
+    width:65%;
+    text-align:left;
+    float:right;
+  }
+  .images-contener-row-content{
+    transform:translate(50px,-100px);
+  }
   .img_sub{
     width:140px;
   }
@@ -678,6 +746,19 @@ header
   #wrap_content_devblog{
     width:80%;
   }
+  .images-contener-row-title{
+    transform: translateY(-225px);
+    width:90%;
+    float:inherit;
+  }
+  div.images-contener-wrapper{
+    padding-top: 50px;
+  }
+  .images-contener-row-content {
+    transform: translate(50px,-220px);
+    padding-left:10%;
+  }
+
   .wp-post-image.attachment-large{
   width:60%;
   margin-top:25px;
@@ -699,10 +780,13 @@ header
 
 
 
+
 }
 @media all and (max-width:550px)
 {
-
+h1{
+  font-size: 20px !important;
+}
 
 .red_square
 	{
@@ -711,7 +795,25 @@ header
 }
 @media all and (max-width:450px)
 {
+  div.images-contener-wrapper{
+    width: 95% !important;
+    padding-top: 70px !important;
+  }
+  .images-contener-row-content{
+    width:55% !important;
+  }
+  .images-wraper-image{
+    width: 120px;
+  }
+  .footer-contener-contact-wraper{
+    width:100% !important;
+  }
 
+h1{
+  margin-left: auto;
+  margin-right: auto;
+  width:240px !important;
+}
     #rc-imageselect, .g-recaptcha {transform:scale(0.77) translate(35px,0px);-webkit-transform:scale(0.77) translate(35px,0px);transform-origin:0 0;-webkit-transform-origin:0 0;}
 
 
@@ -747,11 +849,25 @@ header
     width: 150px;
   }
   }
-
+  @media all and (max-width:300px){
+    .images-contener-row:nth-last-child(2),  .images-contener-row:nth-last-child(1){
+      padding-top: 60px !important;
+    }
+    .images-contener-row{
+      padding-bottom:25px;
+    }
+    .images-contener-title{
+      width:250px!important;
+    }
+    div.images-contener-wrapper-title, .main-title--mobile {
+      width:95%!important;
+    }
+  }
   /*
   Add modify
   */
   main.main{
+    display:inline-block;
     background-color:white;
     width:100%;
     background: rgba(218,218,218,1);

@@ -5,6 +5,7 @@
   <div class="footer-contact-contener">
   <h1 class="contact-title">Kontakt</h1>
   <address class="address-wraper">
+    <h1 class="contact-title-mobile">Kontakt</h1>
     <p class="address-name-company">
       <span class="color-red">K</span>osmos<span class="color-red">L</span>ab S.p.z.o.o
     </p>
