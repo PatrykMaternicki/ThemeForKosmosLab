@@ -8,6 +8,15 @@ add_filter( 'use_default_gallery_style', '__return_false' );
 ?>
 
 
+<?php
+
+
+function getIcon($nameFile){
+  echo get_template_directory_uri().'/img'.'/'.$nameFile;
+}
+
+ ?>
+
 
 <?php
 /*

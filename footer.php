@@ -11,13 +11,13 @@
     </p>
     <table class="adress-info">
         <tr>
-          <td class="contact-left-cell">Adress</td><td class="contact-right-cell">ZapizdowieDolne ul.Niewiem 16</td>
+          <td class="contact-left-cell"><img class="icon-adress" src=<?php getIcon("white-adress.png");?> ></img></td><td class="contact-right-cell">ZapizdowieDolne ul.Niewiem 16</td>
         </tr>
         <tr>
-          <td class="contact-left-cell">Email</td><td class="contact-right-cell">wieslaw@gmail.com</td>
+          <td class="contact-left-cell"><img class="icon-adress" src=<?php getIcon("white-mail.png");?> ></img></td><td class="contact-right-cell">wieslaw@gmail.com</td>
         </tr>
         <tr>
-          <td class="contact-left-cell">Kontakt</td><td class="contact-right-cell">292929292</td>
+          <td class="contact-left-cell"><img class="icon-adress" src=<?php getIcon("white-fax.png");?> ></img></td><td class="contact-right-cell">292929292</td>
         </tr>
     </table>
   </div>
