@@ -70,7 +70,7 @@
 <?php getLogo(); ?>
 
 				<nav class="navbar_sub">
-				<ol id="nav" class='hamburger_menu'>
+				<ol id="nav" class='hamburger_menu flex-box'>
 				<?php buildNav(); ?>
 
 				</ol>
