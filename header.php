@@ -31,6 +31,7 @@
 						false,
 			      true
 					);
+
 					wp_enqueue_script('google-map', true);
 					wp_enqueue_script('google-map-api',true);
 

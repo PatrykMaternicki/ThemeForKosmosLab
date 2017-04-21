@@ -5,10 +5,17 @@ if ( function_exists( 'add_theme_support' ) ) {
   add_theme_support( 'post-thumbnails' );
 }
 add_filter( 'use_default_gallery_style', '__return_false' );
-?>
 
+function modify_jquery() {
 
-<?php
+	    if (!is_admin()) {
+	        wp_deregister_script('jquery');
+	        wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js', false, '1.8.1');
+	        wp_enqueue_script('jquery');
+	    }
+	}
+
+	add_action('init', 'modify_jquery');
 
 
 function getIcon($nameFile){
@@ -100,7 +107,7 @@ function buildNav ()
 <?php
 function getLogo (){
   $directoryURL = get_template_directory_uri();
-  $URL = "./img/logo.png";
+  $URL = "/img/logo.png";
   $mediaImageURL = "/img/min_logo.jpg";
   $size = " 10w";
   $concatString = $directoryURL.$URL;
@@ -127,7 +134,7 @@ function getLogo (){
 add_filter( 'the_content', 'remove_shortcode_from_index' );*/
 function add_defer_attribute($tag, $handle) {
    // add script handles to the array below
-   $scripts_to_defer = array('google-map','form-api','another-handle');
+   $scripts_to_defer = array('google-map','form-api','mobile-menu','slick-nav-core');
 
    foreach($scripts_to_defer as $defer_script) {
       if ($defer_script === $handle) {

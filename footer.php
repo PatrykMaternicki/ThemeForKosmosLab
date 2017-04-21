@@ -1,5 +1,5 @@
 <footer class="footer-contener">
-  <div id="map">
+  <div id="map" class='main-map'>
   </div>
 <section class="footer-contener-contact-wraper">
   <div class="footer-contact-contener">
@@ -11,10 +11,10 @@
     </p>
     <table class="adress-info">
         <tr>
-          <td class="contact-left-cell"><img class="icon-adress" src=<?php getIcon("white-adress.png");?> ></img></td><td class="contact-right-cell">ZapizdowieDolne ul.Niewiem 16</td>
+          <td class="contact-left-cell"><img class="icon-adress" src=<?php getIcon("white-adress.png");?> ></img></td><td class="contact-right-cell">Lorem ipsum</td>
         </tr>
         <tr>
-          <td class="contact-left-cell"><img class="icon-adress" src=<?php getIcon("white-mail.png");?> ></img></td><td class="contact-right-cell">wieslaw@gmail.com</td>
+          <td class="contact-left-cell"><img class="icon-adress" src=<?php getIcon("white-mail.png");?> ></img></td><td class="contact-right-cell">lorem@ipsum.com</td>
         </tr>
         <tr>
           <td class="contact-left-cell"><img class="icon-adress" src=<?php getIcon("white-fax.png");?> ></img></td><td class="contact-right-cell">292929292</td>

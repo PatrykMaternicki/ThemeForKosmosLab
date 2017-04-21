@@ -20,7 +20,7 @@
 
 					wp_register_script(
 					'google-map',
-					'https://maps.googleapis.com/maps/api/js?key=AIzaSyCaqnLM1SVrvL3kQshw_XDulLz383P6vig',
+					'https://maps.googleapis.com/maps/api/js?key=AIzaSyCaqnLM1SVrvL3kQshw_XDulLz383P6vig&callback=initMap',
 					false,
 					true
 				);
@@ -33,6 +33,8 @@
 					);
 					wp_enqueue_script('google-map', true);
 					wp_enqueue_script('google-map-api',true);
+					wp_register_script('form-api', get_template_directory_uri().'/JS/formApi.js',true);
+					wp_enqueue_script('form-api');
 
 				}
 
@@ -72,12 +74,10 @@
 <?php getLogo(); ?>
 
 				<nav class="navbar_sub">
-				<div class="menu">
 				<ol class="hamburger_menu">
 							<?php buildNav(); ?>
 
 				</ol>
-			</div>
 				</nav>
 
 </header>

@@ -1,8 +1,8 @@
-var map;
+google.maps.event.addDomListener(window, 'load', initMap);
 
 function initMap() {
 		var localization = new google.maps.LatLng(53.777,20.487);
-
+		var map;
 			// Styl mapy
 			var map_style =	[
     {
