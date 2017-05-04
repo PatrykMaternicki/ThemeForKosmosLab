@@ -31,8 +31,9 @@ Category links.
 */
 $category  = [
 get_home_url(),
-get_category_link(get_cat_ID("devblog")),
-get_category_link(get_cat_ID("projects")),
+get_category_link(get_cat_ID("elektronika-konsumecka")),
+get_category_link(get_cat_ID("elektronika-przemyslowa")),
+get_category_link(get_cat_ID("elektronika-rolnicza")),
 get_category_link(get_cat_ID("contact"))
 ];
 
@@ -66,37 +67,50 @@ function buildNav ()
 {
   global $category;
 
-  	if (is_category('devblog'))
+  	if (is_category('elektronika-konsumecka'))
   	{
-        echo '<li id="6" class="nav_size display"><a class="nav_link" href='.$category[0].'>About</a></li>';
-        echo '<li id="2"class="nav_size display nav_activ"><a class="nav_link active_site" href='.$category[1].' >DevBlog</a></li>';
-        echo '<li id="2"class="nav_size display"><a class="nav_link" href='.$category[2].'>Projects</a></li>';
-      	echo '<li id="3" class="nav_size display"><a class="nav_link" href='.$category[3].'>Contact</a></li>';
+        echo '<li id="6" class="display small-frame"><a class="nav_link" href='.$category[0].'>About</a></li>';
+        echo '<li id="2"class="nav_size display nav_activ"><a class="nav_link active_site" href='.$category[1].' >elektronika konsumecka</a></li>';
+        echo '<li id="2"class="nav_size display"><a class="nav_link active_site" href='.$category[2].' >elektronika rolnicza</a></li>';
+        echo '<li id="2"class="nav_size display"><a class="nav_link active_site" href='.$category[3].' >elektronika przemyslowa</a></li>';
+      	echo '<li id="3" class="display small-frame "><a class="nav_link" href='.$category[4].'>Contact</a></li>';
           return;
   	}
   	if (is_category('contact'))
   	{
-      	echo '<li id="1" class="nav_size display"><a class="nav_link" href='.$category[0].'>About</a></li>';
-        echo '<li id="2"class="nav_size display "><a class="nav_link" href='.$category[1].'>DevBlog</a></li>';
-      	echo '<li id="2"class="nav_size display "><a class="nav_link" href='.$category[2].'>Projects</a></li>';
-      	echo '<li id="3" class="nav_size display nav_activ "><a class="nav_link active_site" href='.$category[3].'>Contact</a></li>';
+      	echo '<li id="1" class="display small-frame"><a class="nav_link" href='.$category[0].'>About</a></li>';
+        echo '<li id="2"class="nav_size display"><a class="nav_link active_site" href='.$category[1].' >elektronika konsumecka</a></li>';
+        echo '<li id="2"class="nav_size display"><a class="nav_link active_site" href='.$category[2].' >elektronika rolnicza</a></li>';
+        echo '<li id="2"class="nav_size display"><a class="nav_link active_site" href='.$category[3].' >elektronika przemyslowa</a></li>';
+      	echo '<li id="3" class="display nav_activ small-frame small-frame-activ "><a class="nav_link active_site" href='.$category[4].'>Contact</a></li>';
       	return;
   	}
 
-  	if  (is_category('projects'))
+  	if  (is_category('elektronika-rolnicza'))
   	{
-        echo '<li id="1" class="nav_size display"><a class="nav_link" href='.$category[0].'>About</a></li>';
-        echo '<li id="2"class="nav_size display"><a  class="nav_link" href='.$category[1].'>DevBlog</a></li>';
-      	echo '<li id="2"class="nav_size display nav_activ "><a class="active_site nav_link" href='.$category[2].'>Projects</a></li>';
-      	echo '<li id="3" class="nav_size display "><a class="nav_link" href='.$category[3].'>Contact</a></li>';
+        echo '<li id="1" class=" display small-frame"><a class="nav_link" href='.$category[0].'>About</a></li>';
+        echo '<li id="2"class="nav_size display"><a class="nav_link active_site" href='.$category[1].' >elektronika konsumecka</a></li>';
+        echo '<li id="2"class="nav_size display nav_activ"><a class="nav_link active_site" href='.$category[2].' >elektronika rolnicza</a></li>';
+        echo '<li id="2"class="nav_size display"><a class="nav_link active_site" href='.$category[3].' >elektronika przemyslowa</a></li>';
+      	echo '<li id="3" class="display small-frame "><a class="nav_link" href='.$category[4].'>Contact</a></li>';
+      	return;
+  	}
+    if  (is_category('elektronika-przemyslowa'))
+  	{
+        echo '<li id="1" class="display small-frame "><a class="nav_link" href='.$category[0].'>About</a></li>';
+        echo '<li id="2"class="nav_size display"><a class="nav_link active_site" href='.$category[1].' >elektronika konsumecka</a></li>';
+        echo '<li id="2"class="nav_size display"><a class="nav_link active_site" href='.$category[2].' >elektronika rolnicza</a></li>';
+        echo '<li id="2"class="nav_size display nav_activ"><a class="nav_link active_site" href='.$category[3].' >elektronika przemyslowa</a></li>';
+      	echo '<li id="3" class="display small-frame "><a class="nav_link" href='.$category[4].'>Contact</a></li>';
       	return;
   	}
   	else
   	{
-        echo '<li id="1" class="nav_size display nav_activ"><a class="active_site nav_link" href='.$category[0].'>About</a></li>';
-        echo '<li id="2"class="nav_size display"><a class="nav_link" href='.$category[1].' >DevBlog</a></li>';
-      	echo '<li id="2"class="nav_size display "><a class="nav_link"  href='.$category[2].'>Projects</a></li>';
-      	echo '<li id="3" class="nav_size display"><a class="nav_link"  href='.$category[3].'>Contact</a></li>';
+        echo '<li id="1" class="display small-frame small-frame-activ"><a class="active_site nav_link" href='.$category[0].'>About</a></li>';
+        echo '<li id="2"class="nav_size display"><a class="nav_link active_site" href='.$category[1].' >elektronika konsumecka</a></li>';
+        echo '<li id="2"class="nav_size display"><a class="nav_link active_site" href='.$category[2].' >elektronika rolnicza</a></li>';
+        echo '<li id="2"class="nav_size display"><a class="nav_link active_site" href='.$category[3].' >elektronika przemyslowa</a></li>';
+      	echo '<li id="3" class="display small-frame"><a class="nav_link"  href='.$category[4].'>Contact</a></li>';
     }
 }
 

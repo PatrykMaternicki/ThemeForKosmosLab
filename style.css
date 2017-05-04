@@ -140,7 +140,7 @@ height:100px;
 width:70%;
 margin-left:auto;
 margin-right:auto;
-width:90%;
+width:95%;
 }
 
 flex-box{
@@ -150,9 +150,10 @@ flex-box{
 .navbar_sub
 {
 color:white;
-padding-top:1px;
 float: right;
-transform: translateY(-3%);
+width:100%;
+padding-bottom:25px;
+paddgin-top:25px;
 }
 
 .nav_size
@@ -162,15 +163,15 @@ padding-bottom:10px;
 padding-left:30px;
 padding-right:30px;
 text-align:center;
-margin-right:10px;
 text-transform: uppercase;
 font-weight: bold;
 float:left;
-transform:translateY(-10px);
+font-size:80%;
+
 }
 .nav_size:hover
 {
-background-image: url("img/nav/images/frame4.jpg");
+background-image: url("img/nav/images/frame4.png");
 background-repeat: no-repeat; /*center center fixed;*/
 background-position:center;
 cursor:pointer;
@@ -179,18 +180,17 @@ color:black;
 .nav_size:first-letter:hover{
   color:red;
 }
-.nav_size:nth-last-child(1){
-  margin-left: 10px;
-  margin-right: 0px;
-}
-.nav_size:nth-last-child(2){
+
+
+.nav_size:last-child{
   margin-left: 0px;
   margin-right: 0px;
 }
 
+
 .nav_activ
 {
-background-image: url("img/nav/images/frame4.jpg");
+background-image: url("img/nav/images/frame4.png");
 background-repeat: no-repeat; /*center center fixed;*/
 background-position:center;
 padding-top:10px;
@@ -199,6 +199,52 @@ padding-left:30px;
 padding-right:30px;
 text-align:center;
 color:black
+}
+.small-frame{
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:30px;
+  padding-right:30px;
+  text-align:center;
+  text-transform: uppercase;
+  font-weight: bold;
+  float:left;
+  font-size:80%;
+}
+
+
+.small-frame-activ{
+  background-image: url("img/nav/images/frame4.jpg");
+  background-repeat: no-repeat; /*center center fixed;*/
+  background-position:center;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:30px;
+  padding-right:30px;
+  text-align:center;
+  color:black
+}
+.small-frame:focus{
+  background-image: url("img/nav/images/frame4.jpg");
+  background-repeat: no-repeat; /*center center fixed;*/
+  background-position:center;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:30px;
+  padding-right:30px;
+  text-align:center;
+  color:black
+}
+.small-frame:hover{
+  background-image: url("img/nav/images/frame4.jpg");
+  background-repeat: no-repeat; /*center center fixed;*/
+  background-position:center;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:30px;
+  padding-right:30px;
+  text-align:center;
+  color:black
 }
 .active_site:first-letter{
   color:red;
@@ -462,9 +508,7 @@ margin-top:25px;
   .img_sub{
     width:28% !important;
   }
-  .navbar_sub{
-    transform:translateY(-10%) !important;
-  }
+
 
 #middle_sub
 	{
@@ -472,10 +516,7 @@ margin-top:25px;
 	margin-right:5%;
 	margin-left:5%;
 	}
-header
-	{
-	width:90%;
-	}
+
 
 
 }
@@ -510,8 +551,6 @@ header
       transform: inherit;
       float:right;
     }
-
-
   	ol.hamburger_menu
   	{
   	height:2em;
@@ -1000,6 +1039,35 @@ h1{
     background: linear-gradient(45deg, rgba(218,218,218,1) 0%, rgba(218,218,218,1) 12%, rgba(247,247,247,1) 30%, rgba(247,247,247,1) 48%, rgba(255,255,255,1) 62%, rgba(247,247,247,1) 76%, rgba(218,218,218,1) 92%, rgba(218,218,218,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadada', endColorstr='#dadada', GradientType=1 );
   }
+  .hamburger_menu{
+    padding:0;
+  }
+  .flexbox-post-images--size{
+    width:80%;
+
+  }
+  .flexbox-post ol{
+    width:100%;
+    list-style: none;
+    text-align:center;
+    padding-left:0;
+    margin:0;
+  }
+  .flexbox-post li{
+    display:list-item;
+
+  }
+  .flexbox-post li:before{
+    content:"■";
+    color:red;
+
+  }
+  .flexbox{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+
+  }
   div.main-wrapper-img-company{
     padding-bottom:25px;
     padding-top:25px;
@@ -1012,7 +1080,7 @@ h1{
   }
   section.main-contener{
     margin:auto;
-    width:90%;
+    width:95%;
   }
   h1{
     color: white;
@@ -1049,6 +1117,29 @@ h1{
     flex:60%;
     color:white;
     text-align:center;
+  }
+  .flexbox-post{
+    width:33%;
+    color:white;
+    text-align:center;
+  }
+  .post-title{
+    color:black;
+    text-transform:uppercase;
+
+  }
+  .post-title:first-letter{
+    color:#ED1B24;
+  }
+  .post-article{
+    width: 60%;
+    text-align: justify;
+    margin: auto;
+    color: black;
+  }
+  .post-article:first-letter{
+    text-transform:capitalize;
+    color: #ED1B24;
   }
   li.images-contener-row-line{
     display:block;
