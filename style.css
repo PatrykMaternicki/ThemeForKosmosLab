@@ -502,7 +502,15 @@ color:white;
 margin-top:25px;
 }
 
-
+.footer-post{
+  float:both;
+  width:100%;
+  text-align:right;
+  padding-bottom:15px;
+  padding-top:15px;
+  color:white;
+  background-color: black;
+}
 @media all and (max-width:1600px)
 {
   .img_sub{
@@ -1055,18 +1063,30 @@ h1{
   }
   .flexbox-post li{
     display:list-item;
-
+    padding-top:10px;
+    position:relative;
   }
   .flexbox-post li:before{
     content:"■";
     color:red;
-
+    top:40%;
+    left:-5px;
+    display:inline-block;
+    position:absolute;
   }
   .flexbox{
     width:100%;
     display:flex;
     justify-content: space-around;
 
+  }
+  .flexbox--width95{
+    width:95%;
+    margin:auto;
+  }
+  .flexbox--padding{
+    padding-top:25px;
+    padding-bottom:25px;
   }
   div.main-wrapper-img-company{
     padding-bottom:25px;
@@ -1081,6 +1101,11 @@ h1{
   section.main-contener{
     margin:auto;
     width:95%;
+  }
+  .description-container{
+    background-color:rgba(6, 6, 6, 0.73);
+    width:100%;
+
   }
   h1{
     color: white;
@@ -1122,6 +1147,10 @@ h1{
     width:33%;
     color:white;
     text-align:center;
+  }
+  .flexbox-description{
+    width:60%;
+    margin:auto;
   }
   .post-title{
     color:black;
@@ -1265,7 +1294,7 @@ td.contact-left-cell{
   height:625px !important;
 }
 .footer-contact-container{
-  width:90%;
+  width:95%;
   margin:auto;
 }
 .contact-button{
