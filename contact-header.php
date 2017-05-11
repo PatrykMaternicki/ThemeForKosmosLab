@@ -67,17 +67,15 @@
 </head>
 <body id="bg_body">
 
-<header>
+<header class="header--width">
 
 <?php getLogo(); ?>
 
 				<nav class="navbar_sub">
-				<div class="menu">
 				<ol class="hamburger_menu">
 							<?php buildNav(); ?>
 
 				</ol>
-			</div>
 				</nav>
 
 </header>
