@@ -1093,11 +1093,11 @@ h1{
 
   }
   .flexbox-post ol{
-    width:100%;
+    width:50%;
     list-style: none;
     text-align:center;
     padding-left:0;
-    margin:0;
+    margin:auto;
   }
   .flexbox-post li{
     display:list-item;
@@ -1106,6 +1106,8 @@ h1{
   .flexbox-post li:before{
     content:"■";
     color:red;
+    transform: translate(-10px,5px);
+    display: inline-block;
 
   }
   .flexbox{
@@ -1114,6 +1116,19 @@ h1{
     justify-content: space-around;
 
   }
+  .description-container{
+    background-color:rgba(6, 6, 6, 0.73);
+  }
+  .footer-post{
+    width: 100%;
+    background-color: black;
+  }
+
+  .flexbox--padding{
+    padding-top:25px;
+    padding-bottom:25px;
+  }
+
   div.main-wrapper-img-company{
     padding-bottom:25px;
     padding-top:25px;
@@ -1314,6 +1329,10 @@ td.contact-left-cell{
 .footer-contact-container{
   width:90%;
   margin:auto;
+  color:white;
+  text-align:right;
+  padding-top:15px;
+  padding-bottom:15px;
 }
 .contact-button{
   background: #fa081c;
