@@ -217,24 +217,6 @@ button{
 li.flex{
   flex:60%;
 }
- .gallery-item {
-	float: left;
-	margin-top: 0;
-	text-align: center;
-	width: 33%;
-
-}
-
-
-.wp-post-image
-		{
-    margin-top:20px;
-    margin-left:20px;
-    border:1px black solid;
-		width:35%;
-		height:auto;
-    float:left;
-		}
 
 
 .footer-contact
@@ -249,35 +231,6 @@ padding-top:15px;
 color:white;
 }
 
-
-@media all and (max-width:1600px)
-{
-  .img_sub{
-    width:28% !important;
-  }
-
-
-#middle_sub
-	{
-	width:90%;
-	margin-right:5%;
-	margin-left:5%;
-	}
-
-
-
-}
-.copyright
-	{
-	width:90%;
-	}
-  .attachment-medium{
-    width: 90%;
-    height: auto;
-  }
-
-
-/* AWD */
 @media all and (max-width:1324px){
 
 .active_site--transform{
@@ -391,52 +344,6 @@ color:white;
 
 
   }
-	#container
-	{
-	max-width:80%;
-	}
-	.wp-post-image
-		{
-        border:1px black solid;
-		width:30%;
-		height:20%;
-		}
-
-
-    .gallery .gallery-item {
-    	float: left;
-    	margin-top: 0;
-    	text-align: center;
-    	width: 32%;
-    }
-    .img_sub{
-      width:inherit;
-    }
-
-
-
-
-
-
-
-	#container
-		{
-		max-width:90%;
-		}
-	#middle_sub
-	{
-	width:94%;
-	margin-right:3%;
-	margin-left:3%;
-	margin-bottom:25px;
-	}
-
-	.wp-post-image
-	{
-    border:1px black solid;
-	width:25%;
-	height:20%;
-	}
 	.content
 	{
 	width:70%;
@@ -455,24 +362,6 @@ color:white;
 {
 
 
-	#container
-		{
-		max-width:100%;
-		}
-	.title
-		{
-		margin-left:4.5%;
-		}
-	.test1
-		{
-		margin-right:4.5%;
-		}
-	.red_square
-	{
-	padding-left:5%;
-	padding-right:5%;
-	font-size:8pt;
-	}
   .images-contener{
     padding-bottom:725px !important;
   }
@@ -602,25 +491,6 @@ color:white;
   article.main-article{
     width:100% !important;
   }
-
-
-	.about
-	{
-	height:inherit;
-	}
-  article.devblog_post{
-    width:90%;
-    margin-left:auto;
-    margin-right:auto;
-    float:inherit;
-  }
-  .devblog_title_post{
-    width:50%;
-  }
-  .images-wraper-image{
-    width:160px;
-  }
-
 
 
 }
