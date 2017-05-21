@@ -32,8 +32,11 @@ a
 {
 text-decoration:none;
 color:inherit;
-padding: 10px,10px,30px,30px;
+padding-left:30px;
+padding-right:30px;
 text-align:center;
+padding-top:10px;
+padding-bottom:10px;
 display:block;
 width:auto;
 height:auto;
