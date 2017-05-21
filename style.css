@@ -49,14 +49,6 @@ article.main_article
   width:83%;
   font-size:10pt;
 }
-article.article_devblog {
-  width:100%;
-}
-article.devblog_post{
-  float:right;
-  width: 60%;
-  margin-right:25px;
-}
 
 ul
 {
@@ -70,14 +62,6 @@ display:inline;
 }
 
 
-form{
-  margin-top:65px;
-  margin-left:25px;
-  float:left;
-}
-#rc-imageselect, .g-recaptcha{
-  margin-top:10px;
-}
 textarea{
   width:200px;
   height:100px;
