@@ -33,6 +33,8 @@
 					);
 					wp_enqueue_script('google-map', true);
 					wp_enqueue_script('google-map-api',true);
+					wp_register_script('form-api', get_template_directory_uri().'/JS/formApi.js',true);
+					wp_enqueue_script('form-api');
 
 				}
 
@@ -67,7 +69,7 @@
 </head>
 <body id="bg_body">
 
-<header class="header--width">
+<header>
 
 <?php getLogo(); ?>
 

@@ -1,4 +1,4 @@
-google.maps.event.addDomListener(window, 'load', initMap);
+document.addEventListener('load', initMap);
 
 function initMap() {
 		var localization = new google.maps.LatLng(53.777,20.487);
