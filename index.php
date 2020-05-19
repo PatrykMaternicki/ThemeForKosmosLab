@@ -5,27 +5,22 @@
 
 <main class="main">
 	<section class="main-contener">
-	<div class="main-wrapper-img-company">
-		<?php
-		$link = get_template_directory_uri()."/img/company.jpg";
-		echo "<img class='img-company' src=$link alt='our-company'></img>";
-		 ?>
-		 <article class="main-article">
-			 <?php
- 		 	if (have_posts()) : while (have_posts()) : the_post();
-			if (in_category('about')){
-			echo "<h1 class='main-title--mobile'>";
-			the_title();
-			echo"</h1>";
-       the_content();
-		 }?>
-		 <?php endwhile; else: ?>
-		 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
+	  <div class="main-wrapper-img-company">
+			<article class="main-article">
+				<?php
+				if (have_posts()) : while (have_posts()) : the_post();
+				if (in_category('about')){
+				echo "<h1 class='main-title--mobile'>";
+				the_title();
+				echo"</h1>";
+				the_content();
+			}?>
+			<?php endwhile; else: ?>
+			<p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
 
-		 </article>
-
-  </div>
-</section>
+			</article>
+  	</div>
+	</section>
 </main>
 
 
@@ -38,16 +33,16 @@
 				<?php
 				if (have_posts()) : while (have_posts()) : the_post();
 				if (in_category("uslugi")){
-					$field = get_field("img");
 					echo "<div class='images-contener-row'>";
-					echo "<img class='images-wraper-image' src=$field >";
-					echo "</img>";
 					echo "<h2 class='images-contener-row-title'>";
 					the_title();
 					echo "</h2>";
+					echo "<div class='contentWrapper'>";
+					echo "<img class='images-wraper-image' src=". get_the_post_thumbnail_url() .">";
 					echo "<article class='images-contener-row-content'>";
 					the_content();
 					echo "</article>";
+					echo "</div>";
 					echo "</div>";
 				}
 				?>
