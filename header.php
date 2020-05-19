@@ -66,7 +66,7 @@
 </head>
 <body>
 
-<header class="header--height--none">
+<header class="header--width">
 
 <?php getLogo(); ?>
 
